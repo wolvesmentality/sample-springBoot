@@ -42,7 +42,7 @@ public class UserResourceImpl implements UserResource {
 					.type(MediaType.APPLICATION_JSON).build();
 		}
 		userService.delete(id);
-		return null;
+		return Response.ok().build();
 	}
 
 }
